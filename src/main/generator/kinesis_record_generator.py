@@ -7,10 +7,11 @@ class RecordGeneratorInterface:
     TOTAL_ITEMS_NUMBER: int = 50
 
     def __init__(self, partition_key: str):
-        self.item_number: int = randint(1, self.TOTAL_ITEMS_NUMBER + 1)
+        self.item_number: int = 0
         self.partition_key: str = partition_key
 
     def generate_record(self) -> dict:
+        self.item_number = randint(1, self.TOTAL_ITEMS_NUMBER + 1)
         return {
             'item_id': f"ItemId-{self.item_number}",
             'timestamp': round(time.time()),

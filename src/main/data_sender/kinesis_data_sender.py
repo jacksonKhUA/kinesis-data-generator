@@ -26,5 +26,5 @@ def put_records(stream_name: str, records: list):
 
 
 if __name__ == '__main__':
-    send_data_to_kinesis('AwsCapstoneViewsEsoboliev', ItemViewsGenerator(), 10)
-    send_data_to_kinesis('AwsCapstoneReviewsEsoboliev', ItemReviewsGenerator(), 10)
+    send_data_to_kinesis('AwsViewsEsoboliev', ItemViewsGenerator(), 10)
+    send_data_to_kinesis('AwsReviewsEsoboliev', ItemReviewsGenerator(), 10)

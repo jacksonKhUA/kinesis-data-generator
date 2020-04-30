@@ -1,1 +1,3 @@
 boto3==1.12.45
+pyspark==2.4.5
+aws-hadoop
